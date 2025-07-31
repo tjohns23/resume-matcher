@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: resume-matcher
+    env: node
+    root: backend
+    buildCommand: pip install -r requirements.txt && npm install
+    startCommand: npm start
