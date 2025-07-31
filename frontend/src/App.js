@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import './index.css'; // or './globals.css' depending on your filename
 import { useState } from 'react';
 
 function App() {
-  const [resume, setResume] = useState('');
+  // const [resume, setResume] = useState('');
   const [job, setJob] = useState('');
   const [result, setResult] = useState(null);
 
