@@ -2,6 +2,8 @@
 import './App.css';
 import './index.css'; // or './globals.css' depending on your filename
 import { useState } from 'react';
+const API_URL = process.env.REACT_APP_API_URL;
+
 
 function App() {
   // const [resume, setResume] = useState('');
@@ -45,7 +47,7 @@ function App() {
       formData.append('jobDescription', job);
 
       console.log('Sending match request to backend...');
-      const response = await fetch('/api/match', {
+      const response = await fetch(`${API_URL}/api/match`, {
         method: 'POST',
         body: formData,
       });
