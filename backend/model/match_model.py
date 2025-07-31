@@ -60,7 +60,7 @@ if __name__ == "__main__":
         parsed = json.loads(input_text)
 
         resume_text = parsed.get('resume')
-        job_description = parsed.get('jobDescription')  # Get the job description
+        job_description = parsed.get('jobDescription')  
         
         results = compare_resume(resume_text, job_description)
 
